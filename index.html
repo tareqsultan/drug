@@ -77,5 +77,25 @@ function handleComplete(evt,comp) {
 		</div>
 	</div>
     <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:540px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '887223021769558',
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	
 </body>
 </html>
